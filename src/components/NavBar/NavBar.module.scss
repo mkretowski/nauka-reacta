@@ -1,0 +1,27 @@
+@import '../../styles/settings.scss';
+
+.nav:first-child {
+  background-color: darken($color-dark, 3%);
+  padding: 1px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+
+  a {
+    text-decoration: none;
+    color: $color-light;
+  }
+
+  .links {
+    display: inline-flex;
+    gap: 10px;
+  }
+
+  .tasks {
+    font-size: 24px;
+  }
+}
