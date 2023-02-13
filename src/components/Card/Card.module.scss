@@ -10,4 +10,21 @@
   display: flex;
   justify-content: space-between;
   font-weight: bold;
+  align-items: center;
+}
+
+.button {
+  background: transparent;
+  border: 0;
+  color: $color-success;
+  text-align: center;
+  cursor: pointer;
+  font-size: 25px;
+  transition: $transition;
+  &:hover {
+    color: darken($color-success, 30%);
+  }
+  &.active {
+    color: darken($color-success, 30%);
+  }
 }
