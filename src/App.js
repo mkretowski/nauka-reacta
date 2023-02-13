@@ -5,6 +5,8 @@ import About from './components/About/About';
 import Favorite from './components/Favorite/Favorite';
 import NoMatch from './components/NoMatch/NoMatch';
 import { Routes, Route } from 'react-router-dom';
+import List from './components/List/List';
+
 const App = () => {
   return (
     <main>
@@ -14,6 +16,7 @@ const App = () => {
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
           <Route path='/favorite' element={<Favorite />} />
+          <Route path='/list/:listId' element={<List />} />
           <Route path='*' element={<NoMatch />} />
         </Routes>
       </Container>

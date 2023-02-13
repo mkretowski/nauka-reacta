@@ -3,6 +3,7 @@
 .nav:first-child {
   background-color: darken($color-dark, 3%);
   padding: 1px;
+  margin: 0;
 }
 
 .row {
@@ -19,9 +20,16 @@
   .links {
     display: inline-flex;
     gap: 10px;
+    list-style-type: none;
+    font-size: 16px;
+    font-weight: bold;
   }
 
   .tasks {
     font-size: 24px;
   }
+}
+
+a.linkActive {
+  color: $color-warning;
 }
