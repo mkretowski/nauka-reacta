@@ -2,10 +2,11 @@ import styles from './List.module.scss';
 import Column from '../Column/Column';
 import ColumnForm from '../ColumnForm/ColumnForm';
 import { useSelector, useDispatch } from 'react-redux';
-import { getListById, getColumnsByList } from '../../redux/store';
+import { getColumnsByList } from '../../redux/columnsRedux';
+import { getListById } from '../../redux/listsRedux';
 import { useParams } from 'react-router';
 import SearchForm from '../SearchForm/SearchForm';
-import { updateSearchString } from '../../redux/store';
+import { updateSearchString } from '../../redux/searchStringRedux';
 import { useEffect } from 'react';
 import { Navigate } from 'react-router-dom';
 
